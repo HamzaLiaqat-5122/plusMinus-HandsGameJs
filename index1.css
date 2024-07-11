@@ -1,0 +1,87 @@
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    min-height: 100vh;
+  }
+  .container {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 14px;
+
+  }
+
+  .hands {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+  }
+
+  .left {
+    transform: rotate(90deg);
+  }
+
+  .right {
+    transform: rotate(-90deg) rotateY(180deg);
+  }
+
+  .both {
+    font-size: 6rem;
+    color: rgb(9, 110, 9);
+  }
+
+  .heading {
+    text-align: center;
+    color: rgba(9, 110, 9, 0.911);
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  .heading p {
+    font-size: 1.6rem;
+  }
+
+  .item-hands {
+    display: flex;
+    padding: 1rem 6rem;
+    justify-content: space-evenly;
+  }
+
+  .items1 {
+  }
+
+  .items2 {
+  }
+
+  .items3 {
+  }
+
+  .items {
+    font-size: 3rem;
+    color: rgba(74, 161, 74, 0.767);
+    cursor: pointer;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+
+  .items:hover,
+  .items:hover .item-p {
+    color: rgb(9, 110, 9);
+  }
+
+  .items p {
+    font-size: 1.2rem;
+    color: rgba(74, 161, 74, 0.767);
+  }
+
+  .items .scissors {
+    transform: rotate(90deg) rotateX(180deg);
+  }

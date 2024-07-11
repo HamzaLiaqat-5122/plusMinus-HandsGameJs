@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 249, 167);
+    min-height: 100vh;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 1200px ;
+    max-height: 900px ;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem ;
+}
+
+.heading{
+    padding: 0 2rem;
+}
+
+.heading h1{
+    font-size: 8rem;
+}
+
+.box{
+    text-align: center;
+    line-height: 2.1rem;
+    background-color: lightgray;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+

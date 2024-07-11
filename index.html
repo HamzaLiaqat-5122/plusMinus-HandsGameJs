@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+ -</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="minus box">-</div>
+            <div class="heading"><h1>0</h1></div>
+            <div class="plus box">+</div>
+        </div>
+    </main>
+    <script>
+        const container = document.querySelector(".container");
+        const minus = document.querySelector(".minus");
+        const plus = document.querySelector(".plus");
+        const heading = document.querySelector(".heading h1")
+        const box = document.querySelectorAll(".box")
+        let a = 0;
+        box.forEach((box) => {
+            box.addEventListener("click", (e) => {
+                if(e.target.classList.contains("plus")){
+                      a++;
+                    heading.innerHTML = a;
+                 } 
+                 if(e.target.classList.contains("minus")){
+                     if(a === 0){
+                         heading.innerHTML = 0;
+                     }else{
+                         a--;
+                         heading.innerHTML = a;
+
+                     }
+                 
+                 }
+            });
+        });
+
+    </script>
+</body>
+</html>
+
